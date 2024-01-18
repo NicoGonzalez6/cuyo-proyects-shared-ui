@@ -1,4 +1,5 @@
 import type { Preview } from "@storybook/react";
+import "@cuyo-proyects/cuyo-craft/dist/index.css";
 
 const preview: Preview = {
   parameters: {

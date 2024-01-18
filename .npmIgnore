@@ -1,2 +1,4 @@
-stories
 .storybook
+*stories*
+util
+assets
