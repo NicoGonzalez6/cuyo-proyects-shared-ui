@@ -1,5 +1,5 @@
 import type { Preview } from "@storybook/react";
-//Import need it for dev enviroment
+//import need it for dev enviroment
 import "@cuyo-proyects/cuyo-craft/dist/index.css";
 
 const preview: Preview = {
