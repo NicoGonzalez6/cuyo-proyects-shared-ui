@@ -2,3 +2,5 @@
 *stories*
 util
 assets
+jest.config.js
+setupTests.ts
