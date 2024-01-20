@@ -7,7 +7,18 @@ import ${componentName} from "./${componentName}";
 const meta: Meta<typeof ${componentName} > = {
   title: "Components / ${componentName}  / ${componentName} ",
   component: ${componentName} as React.FC,
+  tags: ["autodocs"],
+  parameters: {
+    docs: {
+      description: {
+        component: 'Component description',
+      },
+    },
+  },
 };
+
+export default meta;
+type Story = StoryObj<typeof meta>;
 
 export const ${componentName}Component: Story = {
   name: "${componentName} Component",

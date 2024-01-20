@@ -58,7 +58,12 @@ describe("Tests CcButtonComponent", () => {
   it("Should be disabled if the disable prop is passed as true and should have the disabled filled color", () => {
     const onClick = jest.fn();
     render(
-      <CcButton onClick={onClick} disabled buttonType="filled-disabled" />
+      <CcButton
+        onClick={onClick}
+        disabled
+        buttonType="disabled"
+        buttonVariant="filled"
+      />
     );
     const button = screen.getByRole("button");
     fireEvent.click(button);
@@ -66,8 +71,8 @@ describe("Tests CcButtonComponent", () => {
     expect(button).toHaveClass("cc-bg-neutral-300");
   });
 
-  it("Should render the primary color button", () => {
-    render(<CcButton buttonType="filled-primary" />);
+  it("Should render the primary filled button", () => {
+    render(<CcButton buttonType="primary" buttonVariant="filled" />);
     const button = screen.getByRole("button");
     expect(button).toHaveClass("cc-bg-primary-500");
   });
