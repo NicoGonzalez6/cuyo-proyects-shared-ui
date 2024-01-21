@@ -4,7 +4,7 @@ import { render, screen, fireEvent } from "@testing-library/react";
 import { CcBadge } from "./CcBadge";
 import { CcBadgeProps } from "./CcBadge.types";
 
-describe("Test Component", () => {
+describe("Test CcBadgeComponent", () => {
   let props: CcBadgeProps;
 
   beforeEach(() => {
