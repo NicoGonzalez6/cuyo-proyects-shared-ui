@@ -23,6 +23,9 @@ export const button: Story = {
   args: {
     buttonSize: "sm",
     buttonType: "primary",
+    buttonVariant: "filled",
+    disabled: false,
+    fullWidth: false,
     children: "this is an example component",
   },
 };

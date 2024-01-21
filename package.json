@@ -16,7 +16,7 @@
   "license": "ISC",
   "dependencies": {
     "@cuyo-proyects/assets-ui": "^1.0.7",
-    "@cuyo-proyects/cuyo-craft": "^1.0.10",
+    "@cuyo-proyects/cuyo-craft": "^1.0.12",
     "@rollup/plugin-commonjs": "^17.1.0",
     "@rollup/plugin-node-resolve": "^15.2.3",
     "@rollup/plugin-typescript": "^11.1.6",

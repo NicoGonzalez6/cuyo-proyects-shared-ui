@@ -1,6 +1,6 @@
 import React from "react";
 import type { Meta, StoryObj } from "@storybook/react";
-import CcBadge from "./CcBadge";
+import { CcBadge } from "./CcBadge";
 
 const meta: Meta<typeof CcBadge> = {
   title: "Components / CcBadge  / CcBadge ",
@@ -21,4 +21,10 @@ type Story = StoryObj<typeof meta>;
 
 export const CcBadgeComponent: Story = {
   name: "CcBadge Component",
+  args: {
+    children: "example tag",
+    badgeSize: "sm",
+    badgeType: "primary",
+    badgeVariant: "filled",
+  },
 };

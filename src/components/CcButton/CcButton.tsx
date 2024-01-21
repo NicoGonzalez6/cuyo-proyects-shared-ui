@@ -1,5 +1,9 @@
 import React from "react";
-import { CcButtonSize, defaultStyles, CcButtonStyles } from "./CcButton.styles";
+import {
+  CcButtonSize,
+  CcButtonDefaultStyles,
+  CcButtonStyles,
+} from "./CcButton.styles";
 
 import { CcButtonProps } from "./CcButton.types";
 import clsx from "clsx";
@@ -19,7 +23,7 @@ export const CcButton: React.FC<CcButtonProps> = ({
       onClick={onClick}
       className={clsx(
         CcButtonSize[buttonSize],
-        defaultStyles,
+        CcButtonDefaultStyles,
         CcButtonStyles[buttonType][buttonVariant],
         { "cc-w-full cc-justify-center": fullWidth }
       )}

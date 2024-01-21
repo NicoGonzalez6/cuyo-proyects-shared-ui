@@ -4,7 +4,8 @@ import {
   CcButtonVariant,
 } from "./CcButton.types";
 
-export const defaultStyles = "cc-rounded-md cc-shadow-sm cc-flex cc-gap-3";
+export const CcButtonDefaultStyles =
+  "cc-rounded-md cc-shadow-sm cc-flex cc-gap-3";
 
 export const CcButtonSize = {
   [CcButtonSizes.SM]:
@@ -17,39 +18,39 @@ export const CcButtonStyles = {
   [CcButtonTypes.PRIMARY]: {
     [CcButtonVariant.FILLED]:
       "cc-bg-primary-500 cc-text-white hover:cc-bg-primary-400",
-    [CcButtonVariant.OUTLINED]: `cc-bg-white  !cc-text-primary-600 cc-border cc-border-primary-600  hover:cc-bg-primary-50`,
+    [CcButtonVariant.OUTLINED]: `cc-bg-transparent !cc-text-primary-600 cc-border cc-border-primary-600 hover:cc-bg-primary-50`,
     [CcButtonVariant.TEXT]: `cc-bg-transparent !cc-text-primary-500 hover:!cc-text-primary-600 !cc-shadow-[none]`,
   },
   [CcButtonTypes.SECONDARY]: {
     [CcButtonVariant.FILLED]: `cc-bg-secondary-500 cc-text-white hover:cc-bg-secondary-400`,
-    [CcButtonVariant.OUTLINED]: `cc-bg-white !cc-text-secondary-600 cc-border cc-border-secondary-600  hover:cc-bg-secondary-50`,
+    [CcButtonVariant.OUTLINED]: `cc-bg-transparent !cc-text-secondary-600 cc-border cc-border-secondary-600  hover:cc-bg-secondary-50`,
     [CcButtonVariant.TEXT]: `cc-bg-transparent !cc-text-secondary-500 hover:!cc-text-secondary-600 !cc-shadow-[none]`,
   },
   [CcButtonTypes.ERROR]: {
     [CcButtonVariant.FILLED]: `cc-bg-error-500 cc-text-white hover:cc-bg-error-400`,
-    [CcButtonVariant.OUTLINED]: `cc-bg-white !cc-text-error-600 cc-border cc-border-error-600  hover:cc-bg-error-50`,
+    [CcButtonVariant.OUTLINED]: `cc-bg-transparent !cc-text-error-600 cc-border cc-border-error-600  hover:cc-bg-error-50`,
     [CcButtonVariant.TEXT]: `cc-bg-transparent !cc-text-error-500 hover:!cc-text-error-600 !cc-shadow-[none]`,
   },
   [CcButtonTypes.WARNING]: {
     [CcButtonVariant.FILLED]: `cc-bg-warning-500 cc-text-white hover:cc-bg-warning-400`,
-    [CcButtonVariant.OUTLINED]: `cc-bg-white !cc-text-warning-600 cc-border cc-border-warning-600  hover:cc-bg-warning-50`,
+    [CcButtonVariant.OUTLINED]: `cc-bg-transparent !cc-text-warning-600 cc-border cc-border-warning-600  hover:cc-bg-warning-50`,
     [CcButtonVariant.TEXT]: `cc-bg-transparent !cc-text-warning-500 hover:!cc-text-warning-600 !cc-shadow-[none]`,
   },
   [CcButtonTypes.GREY]: {
     [CcButtonVariant.FILLED]: `cc-bg-neutral-500 cc-text-white hover:cc-bg-neutral-400`,
-    [CcButtonVariant.OUTLINED]: `cc-bg-white !cc-text-neutral-600 cc-border cc-border-neutral-600  hover:cc-bg-neutral-50`,
+    [CcButtonVariant.OUTLINED]: `cc-bg-transparent !cc-text-neutral-600 cc-border cc-border-neutral-600  hover:cc-bg-neutral-50`,
     [CcButtonVariant.TEXT]: `cc-bg-transparent !cc-text-neutral-500 hover:!cc-text-neutral-600 !cc-shadow-[none]`,
   },
 
   [CcButtonTypes.SUCCESS]: {
     [CcButtonVariant.FILLED]: `cc-bg-success-500 cc-text-white hover:cc-bg-success-400`,
-    [CcButtonVariant.OUTLINED]: `cc-bg-white !cc-text-success-600 cc-border cc-border-success-600  hover:cc-bg-success-50`,
+    [CcButtonVariant.OUTLINED]: `cc-bg-transparent !cc-text-success-600 cc-border cc-border-success-600  hover:cc-bg-success-50`,
     [CcButtonVariant.TEXT]: `cc-bg-transparent !cc-text-success-500 hover:!cc-text-success-600 !cc-shadow-[none]`,
   },
 
   [CcButtonTypes.DISABLED]: {
     [CcButtonVariant.FILLED]: `cc-bg-neutral-300 cc-text-white`,
-    [CcButtonVariant.OUTLINED]: `cc-bg-white !cc-text-neutral-400 cc-border cc-border-neutral-100`,
+    [CcButtonVariant.OUTLINED]: `cc-bg-transparent !cc-text-neutral-400 cc-border cc-border-neutral-100`,
     [CcButtonVariant.TEXT]: `cc-bg-transparent !cc-text-neutral-300 !cc-shadow-[none]`,
   },
 };

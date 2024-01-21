@@ -11,12 +11,18 @@ export enum CcBadgeTypes {
   ERROR = "error",
   SUCCESS = "success",
   WARNING = "warning",
-  DISABLED = "disabled",
+}
+
+export enum CcBadgeSizes {
+  LG = "lg",
+  MD = "md",
+  SM = "sm",
 }
 
 export interface CcBadgeProps {
   badgeType?: `${CcBadgeTypes}`;
   badgeVariant?: `${CcBadgeVariant}`;
+  badgeSize?: `${CcBadgeSizes}`;
   children?: React.ReactNode;
   onClick?: () => void;
 }

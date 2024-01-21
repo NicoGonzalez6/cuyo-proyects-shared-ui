@@ -1,7 +1,7 @@
 import React from "react";
-import { render } from "@testing-library/react";
+import { render, screen, fireEvent } from "@testing-library/react";
 
-import CcBadge from "./CcBadge";
+import { CcBadge } from "./CcBadge";
 import { CcBadgeProps } from "./CcBadge.types";
 
 describe("Test Component", () => {
@@ -13,14 +13,47 @@ describe("Test Component", () => {
     };
   });
 
-  const renderComponent = () => render(<CcBadge {...props} />);
-
-  it("should render foo text correctly", () => {
+  it("should render CcBadge correctly", () => {
     props.children = "harvey was here";
-    const { getByTestId } = renderComponent();
+    render(<CcBadge {...props} />);
+    const badge = screen.getByTestId("CcBadge");
+    expect(badge).toHaveTextContent(props.children as string);
+  });
 
-    const component = getByTestId("CcBadge");
+  it("should render CcBadge primary color filled variant correctly", () => {
+    render(<CcBadge {...props} badgeType="primary" badgeVariant="filled" />);
 
-    expect(component).toHaveTextContent("harvey was here");
+    const badge = screen.getByTestId("CcBadge");
+
+    expect(badge).toHaveClass("cc-bg-primary-500");
+  });
+
+  it("should render CcBadge primary color outlined variant correctly", () => {
+    render(<CcBadge {...props} badgeType="primary" badgeVariant="outlined" />);
+
+    const badge = screen.getByTestId("CcBadge");
+
+    expect(badge).toHaveClass(
+      "cc-bg-transparent cc-border cc-border-primary-600"
+    );
+  });
+
+  it("should onClick event work correctly", () => {
+    const onClick = jest.fn();
+
+    render(
+      <CcBadge
+        {...props}
+        badgeType="primary"
+        badgeVariant="outlined"
+        onClick={onClick}
+      />
+    );
+
+    const badge = screen.getByTestId("CcBadge");
+
+    fireEvent.click(badge);
+
+    expect(onClick).toHaveBeenCalledTimes(1);
   });
 });
