@@ -11,7 +11,8 @@
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
     "types": ["jest", "@types/jest", "node", "@testing-library/jest-dom"],
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "resolveJsonModule": true
   },
   "include": ["src/**/*", "stories"],
   "exclude": ["node_modules", "dist"]
