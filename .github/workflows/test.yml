@@ -1,7 +1,7 @@
 name: run-tests
 on:
   pull_request:
-    branches: [master]
+    branches: [master, dev]
 jobs:
   build:
     runs-on: ubuntu-latest
