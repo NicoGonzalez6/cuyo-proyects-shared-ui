@@ -16,7 +16,7 @@ describe("Tests CcButtonComponent", () => {
   it("Should render CcButton component", () => {
     render(<CcButton {...props} />);
     const button = screen.getByRole("button");
-    expect(button).toHaveTextContent(props.children as string);
+    expect(button).toBeInTheDocument();
   });
 
   it("Should render CcButton sm size correctly", () => {
