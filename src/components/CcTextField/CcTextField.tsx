@@ -7,7 +7,6 @@ import {
   CcTextFieldInputTextStyles,
   CcTextFieldErrorTextStyles,
   CcTextFieldSuccessTextStyles,
-  CcTextFieldInputTextSizes,
   CcTextFieldDefaultInputStyles,
   CcTextFieldHelperDefaultSyles,
 } from "./CcTextField.styles";
@@ -27,12 +26,13 @@ export const CcTextField: React.FC<CCTextFieldProps> = ({
   value,
   helperText,
   placeholder,
-  size = "sm",
 }) => (
   <div data-testid="CCTextField">
-    <label className={CcTextFieldLabelStyles} data-testid="CCTextFieldLabel">
-      {label}
-    </label>
+    {label && (
+      <label className={CcTextFieldLabelStyles} data-testid="CCTextFieldLabel">
+        {label}
+      </label>
+    )}
     <div className="cc-relative">
       <input
         data-testid="CCTextFieldInput"
@@ -44,7 +44,6 @@ export const CcTextField: React.FC<CCTextFieldProps> = ({
         disabled={disabled}
         className={clsx(
           CcTextFieldDefaultInputStyles,
-          CcTextFieldInputTextSizes[size],
           disabled && CcTextFieldInputTextStyles.disabledStyles,
           error && CcTextFieldInputTextStyles.errorStyles,
           success && CcTextFieldInputTextStyles.successStyles,
@@ -59,11 +58,9 @@ export const CcTextField: React.FC<CCTextFieldProps> = ({
         <i
           data-testid="CCTextFieldIcon"
           className={clsx(
-            "cc-absolute cc-right-[16px] cc-text-3xl",
+            "cc-absolute cc-right-[16px] cc-text-3xl cc-top-2",
             { "icon-check-circle cc-text-success-500": success },
-            { "icon-multiply-circle cc-text-error-500": error },
-            { "cc-top-2": size === "sm" },
-            { "cc-top-4": size === "lg" }
+            { "icon-multiply-circle cc-text-error-500": error }
           )}
         />
       )}

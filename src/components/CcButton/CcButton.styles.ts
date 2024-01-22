@@ -11,7 +11,7 @@ export const CcButtonSize = {
   [CcButtonSizes.SM]:
     "cc-px-4 cc-py-2 cc-max-h-[36px] cc-flex cc-items-center cc-text-white cc-text-sm",
   [CcButtonSizes.MD]: "cc-p-3 cc-text-base",
-  [CcButtonSizes.LG]: "cc-p-4 cc-text-lg",
+  [CcButtonSizes.LG]: "cc-py-4 cc-px-6 cc-text-lg",
 };
 
 export const CcButtonStyles = {

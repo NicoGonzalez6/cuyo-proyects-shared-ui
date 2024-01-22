@@ -1,9 +1,8 @@
-import { CcTextFieldSizes } from "./CcTextField.types";
-
 export const CcTextFieldLabelStyles =
   "cc-text-xs cc-text-neutral-900 cc-font-medium cc-mb-1";
 
-export const CcTextFieldDefaultInputStyles = "cc-w-full cc-rounded-md";
+export const CcTextFieldDefaultInputStyles =
+  "cc-w-full cc-rounded-md cc-py-2 cc-px-3";
 
 export const CcTextFieldInputTextStyles = {
   defaultStyles:
@@ -14,10 +13,6 @@ export const CcTextFieldInputTextStyles = {
     "placeholder:cc-text-grey-400 placeholder:cc-text-sm cc-border cc-border-error-200 cc-outline-none cc-text-sm",
   successStyles:
     "placeholder:cc-text-grey-400 placeholder:cc-text-sm cc-border cc-border-success-200 cc-outline-none cc-text-sm",
-};
-export const CcTextFieldInputTextSizes = {
-  [CcTextFieldSizes.SM]: "cc-py-2 cc-px-3",
-  [CcTextFieldSizes.LG]: "cc-p-4",
 };
 
 export const CcTextFieldHelperDefaultSyles =
