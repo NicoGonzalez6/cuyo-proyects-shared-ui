@@ -4,14 +4,23 @@ on:
   pull_request:
     branches: [dev]
 jobs:
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.build-publish.outputs.page_url }}
+  build-and-deploy:
     runs-on: ubuntu-latest
+
     steps:
-      - id: build-publish
-        uses: bitovi/github-actions-storybook-to-github-pages@v1.0.0
+      - name: Check out code
+        uses: actions/checkout@v3
+
+      - name: Set up node
+        uses: actions/setup-node@v3
+
+      - name: Install Packages
+        run: npm install
+
+      - name: Build Storybook
+        run: build-storybook-docs
+
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-          path: storybook-static
-          build_command: npm run build-storybook-docs
+          folder: storybook-static
