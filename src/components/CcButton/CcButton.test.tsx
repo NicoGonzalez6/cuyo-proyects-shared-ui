@@ -40,7 +40,7 @@ describe("Tests CcButtonComponent", () => {
 
     const button = screen.getByRole("button");
 
-    expect(button).toHaveClass("cc-p-4 cc-text-lg");
+    expect(button).toHaveClass("cc-py-4 cc-px-6 cc-text-lg");
   });
 
   it("Should call onClick event correctly", () => {

@@ -25,7 +25,6 @@ export const CcTextFieldComponent: Story = {
     label: "Label",
     helperText: "this is helper text",
     placeholder: "placeholder",
-    size: "sm",
     success: false,
     successText: "Success Text",
     error: false,
