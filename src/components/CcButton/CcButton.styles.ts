@@ -10,8 +10,8 @@ export const CcButtonDefaultStyles =
 export const CcButtonSize = {
   [CcButtonSizes.SM]:
     "cc-px-4 cc-py-2 cc-max-h-[36px] cc-flex cc-items-center cc-text-white cc-text-sm",
-  [CcButtonSizes.MD]: "cc-px-5 cc-py-3 cc-text-base",
-  [CcButtonSizes.LG]: "cc-px-6 cc-py-4 cc-text-lg",
+  [CcButtonSizes.MD]: "cc-p-3 cc-text-base",
+  [CcButtonSizes.LG]: "cc-p-4 cc-text-lg",
 };
 
 export const CcButtonStyles = {
