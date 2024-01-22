@@ -6,7 +6,6 @@
   "module": "dist/index.esm.js",
   "scripts": {
     "build": "rollup -c",
-    "postinstall": "npm run build",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "test": "jest",
