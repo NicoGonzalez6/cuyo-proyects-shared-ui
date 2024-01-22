@@ -11,14 +11,14 @@ jobs:
       - name: Check out code
         uses: actions/checkout@v3
 
-      - name: Set up node
-        uses: actions/setup-node@v3
-
       - name: Install Packages
         run: npm install
 
       - name: Build Storybook
         run: npm run build-storybook-docs
+
+      - name: Print Contents of storybook-static
+        run: ls -R storybook-static
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
