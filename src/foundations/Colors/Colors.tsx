@@ -2,12 +2,11 @@ import React from "react";
 import { ColorsProps } from "./Colors.types";
 import resolveConfig from "tailwindcss/resolveConfig";
 import tailwindConfig from "../../../tailwind.config.js";
-
 const { theme } = resolveConfig(tailwindConfig);
 
 const foundationColors = Object.values(theme.colors);
 
-const extractWord = (str) => {
+const extratColor = (str) => {
   const match = str.match(/--cc-color_(\w+)/);
   if (match && match[1]) {
     return match[1].replace(/_/g, "-");
@@ -30,7 +29,7 @@ export const Colors: React.FC<ColorsProps> = () => (
                     style={{ background: color[currentColor] }}
                   />
                   <p className="cc-text-sm">
-                    {`cc-${extractWord(color[currentColor])}`}
+                    {`${extratColor(color[currentColor])}`}
                   </p>
                 </div>
               );

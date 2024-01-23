@@ -36,10 +36,10 @@ export const CcButtonStyles = {
     [CcButtonVariant.OUTLINED]: `cc-bg-transparent !cc-text-warning-600 cc-border cc-border-warning-600  hover:cc-bg-warning-50`,
     [CcButtonVariant.TEXT]: `cc-bg-transparent !cc-text-warning-500 hover:!cc-text-warning-600 !cc-shadow-[none]`,
   },
-  [CcButtonTypes.GREY]: {
-    [CcButtonVariant.FILLED]: `cc-bg-neutral-500 cc-text-white hover:cc-bg-neutral-400`,
-    [CcButtonVariant.OUTLINED]: `cc-bg-transparent !cc-text-neutral-600 cc-border cc-border-neutral-600  hover:cc-bg-neutral-50`,
-    [CcButtonVariant.TEXT]: `cc-bg-transparent !cc-text-neutral-500 hover:!cc-text-neutral-600 !cc-shadow-[none]`,
+  [CcButtonTypes.BROWN]: {
+    [CcButtonVariant.FILLED]: `cc-bg-brown-500 cc-text-white hover:cc-bg-brown-400`,
+    [CcButtonVariant.OUTLINED]: `cc-bg-transparent !cc-text-brown-600 cc-border cc-border-brown-600  hover:cc-bg-brown-50`,
+    [CcButtonVariant.TEXT]: `cc-bg-transparent !cc-text-brown-500 hover:!cc-text-brown-600 !cc-shadow-[none]`,
   },
 
   [CcButtonTypes.SUCCESS]: {
