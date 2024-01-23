@@ -7,7 +7,7 @@
   "scripts": {
     "build": "rollup -c",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build",
+    "build-storybook-docs": "storybook build --docs",
     "test": "jest",
     "generate": "node ./util/create-component"
   },
