@@ -1,5 +1,4 @@
 import React from "react";
-import { ColorsProps } from "./Colors.types";
 import resolveConfig from "tailwindcss/resolveConfig";
 import tailwindConfig from "../../../tailwind.config.js";
 const { theme } = resolveConfig(tailwindConfig);
@@ -15,7 +14,7 @@ const extratColor = (str) => {
   }
 };
 
-export const Colors: React.FC<ColorsProps> = () => (
+export const Colors: React.FC = () => (
   <div data-testid="Colors" className="cc-flex cc-flex-wrap cc-gap-8">
     {foundationColors.map((color, i) => {
       return (
