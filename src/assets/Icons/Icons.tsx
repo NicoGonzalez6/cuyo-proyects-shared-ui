@@ -3,7 +3,7 @@ import iconsDocs from "@cuyo-proyects/shared-assets/dist/icons/codepoints.json";
 
 const iconsArray = Object.keys(iconsDocs);
 
-export const CcIcons = () => {
+export const Icons = () => {
   return (
     <div className="cc-flex cc-flex-wrap cc-gap-5" data-testid="CcIcons">
       {iconsArray.map((icon, i) => {
