@@ -1,5 +1,4 @@
-# Sample workflow for building and deploying a Jekyll site to GitHub Pages
-name: Deploy Jekyll with GitHub Pages dependencies preinstalled
+name: deploy actions
 
 on:
   pull_request:
@@ -26,6 +25,12 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: "./storybook-static"
+  test:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Run tests
+        run: npm test
   deploy:
     environment:
       name: github-pages
