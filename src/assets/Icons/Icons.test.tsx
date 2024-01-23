@@ -1,10 +1,10 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
-import { CcIcons } from "./CcIcons";
+import { Icons } from "./Icons";
 
 describe("Test CcIcon Component", () => {
   it("should render CcBadge correctly", () => {
-    render(<CcIcons />);
+    render(<Icons />);
     const badge = screen.getByTestId("CcIcons");
     expect(badge).toBeInTheDocument();
   });

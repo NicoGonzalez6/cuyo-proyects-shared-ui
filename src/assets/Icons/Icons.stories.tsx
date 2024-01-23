@@ -1,10 +1,10 @@
 import React from "react";
 import type { Meta, StoryObj } from "@storybook/react";
-import { CcIcons } from "./CcIcons";
+import { Icons } from "./Icons";
 
-const meta: Meta<typeof CcIcons> = {
+const meta: Meta<typeof Icons> = {
   title: "Assets / Icons ",
-  component: CcIcons as React.FC,
+  component: Icons as React.FC,
   tags: ["autodocs"],
   parameters: {
     docs: {
