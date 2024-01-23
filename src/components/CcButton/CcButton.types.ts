@@ -7,7 +7,7 @@ export enum CcButtonVariant {
 export enum CcButtonTypes {
   PRIMARY = "primary",
   SECONDARY = "secondary",
-  GREY = "grey",
+  BROWN = "brown",
   ERROR = "error",
   SUCCESS = "success",
   WARNING = "warning",
