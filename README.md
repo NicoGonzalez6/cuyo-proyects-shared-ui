@@ -1,3 +1,3 @@
 # cuyo-proyects/shared-ui
 
-Cuyo Proyects shared ui components library, this is a personal library.
+Cuyo Proyects shared ui components library, this is a personal library. WORK IN PROGRESS
