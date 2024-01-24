@@ -2,7 +2,7 @@ import React from "react";
 import { CcTabsProps } from "./CcTabs.types";
 import { CcTab } from "../CcTab/CcTab";
 
-export const CcTabs: React.FC<CcTabsProps> = ({ tabs }) => {
+export const CcTabs: React.FC<CcTabsProps> = ({ tabs, onClick }) => {
   return (
     <div
       data-testid="CcTabs"
@@ -17,7 +17,7 @@ export const CcTabs: React.FC<CcTabsProps> = ({ tabs }) => {
             isActive={tab.isActive}
             notificationValue={tab.notificationValue}
             notification={tab.notification}
-            onClick={tab.onClick}
+            onClick={() => onClick(i.toString())}
             key={i}
           />
         );
