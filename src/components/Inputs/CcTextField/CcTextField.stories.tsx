@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import { CcTextField } from "./CcTextField";
 
 const meta: Meta<typeof CcTextField> = {
-  title: "Components / CcTextField  / CcTextField ",
+  title: "Components / Inputs  / CcTextField ",
   component: CcTextField as React.FC,
   tags: ["autodocs"],
   parameters: {

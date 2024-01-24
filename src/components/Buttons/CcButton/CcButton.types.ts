@@ -15,7 +15,6 @@ export enum CcButtonTypes {
 }
 
 export enum CcButtonSizes {
-  LG = "lg",
   MD = "md",
   SM = "sm",
 }

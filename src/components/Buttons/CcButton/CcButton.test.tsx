@@ -35,14 +35,6 @@ describe("Tests CcButtonComponent", () => {
     expect(button).toHaveClass("cc-p-3 cc-text-base");
   });
 
-  it("Should render CcButton lg size correctly", () => {
-    render(<CcButton {...props} buttonSize="lg" />);
-
-    const button = screen.getByRole("button");
-
-    expect(button).toHaveClass("cc-py-4 cc-px-6 cc-text-lg");
-  });
-
   it("Should call onClick event correctly", () => {
     const onClick = jest.fn();
 
