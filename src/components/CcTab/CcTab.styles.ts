@@ -10,9 +10,9 @@ export const CcTabStyles = {
 
 export const CcNotificationStyles = {
   default:
-    "cc-w-5 cc-h-5 cc-rounded-full cc-text-sm cc-flex cc-justify-center cc-items-center cc-bg-neutral-100",
+    "cc-min-w-6 cc-min-h-6 cc-rounded-full cc-text-sm cc-flex cc-justify-center cc-items-center cc-bg-neutral-100 cc-px-1",
   active: "cc-bg-primary-500 cc-text-white",
-  disabled: "cc-text-white cc-bg-neutral-200",
+  disabled: "!cc-text-white !cc-bg-neutral-200",
 };
 
 export const CcIconStyles = {
