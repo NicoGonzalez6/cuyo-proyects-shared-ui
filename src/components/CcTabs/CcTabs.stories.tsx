@@ -22,6 +22,7 @@ type Story = StoryObj<typeof meta>;
 export const CcTabsComponent: Story = {
   name: "CcTabs Component",
   args: {
+    onClick: (i) => console.log(i),
     tabs: [
       {
         label: "label",

@@ -28,5 +28,6 @@ export const CcTabsComponent: Story = {
     disabled: false,
     icon: "icon-bell",
     isActive: false,
+    onClick: () => console.log("click"),
   },
 };
