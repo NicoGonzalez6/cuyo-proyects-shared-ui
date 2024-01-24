@@ -5,7 +5,6 @@ export const CcBadgeDefaultStyles = "cc-rounded-xl";
 export const CcBadgeSize = {
   [CcBadgeSizes.SM]: "cc-px-2 cc-py-0 cc-text-xs",
   [CcBadgeSizes.MD]: "cc-px-3 cc-py-[2px] cc-text-sm",
-  [CcBadgeSizes.LG]: "cc-px-3 cc-py-1 cc-text-sm",
 };
 
 export const CcBadgeStyles = {

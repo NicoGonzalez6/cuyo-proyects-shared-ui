@@ -14,7 +14,6 @@ export enum CcBadgeTypes {
 }
 
 export enum CcBadgeSizes {
-  LG = "lg",
   MD = "md",
   SM = "sm",
 }

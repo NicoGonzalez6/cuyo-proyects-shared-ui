@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import { CcBadge } from "./CcBadge";
 
 const meta: Meta<typeof CcBadge> = {
-  title: "Components / CcBadge  / CcBadge ",
+  title: "Components / Data Display  / CcBadge ",
   component: CcBadge as React.FC,
   tags: ["autodocs"],
   parameters: {

@@ -3,7 +3,7 @@ import { CcButton } from "./CcButton";
 import type { Meta, StoryObj } from "@storybook/react";
 
 const meta: Meta<typeof CcButton> = {
-  title: "Components / CcButton / CcButton",
+  title: "Components / Buttons / CcButton",
   component: CcButton as React.FC,
   tags: ["autodocs"],
   parameters: {

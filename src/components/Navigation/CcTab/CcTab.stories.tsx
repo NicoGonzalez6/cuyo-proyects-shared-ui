@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import { CcTab } from "./CcTab";
 
 const meta: Meta<typeof CcTab> = {
-  title: "Components / CcTab  / CcTab ",
+  title: "Components / Navigation  / CcTab ",
   component: CcTab as React.FC,
   tags: ["autodocs"],
   parameters: {
