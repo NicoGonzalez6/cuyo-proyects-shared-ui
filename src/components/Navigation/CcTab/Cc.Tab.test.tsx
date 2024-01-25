@@ -47,7 +47,7 @@ describe("Test CcTabs", () => {
     render(<CcTab {...props} disabled />);
     const tab = screen.getByTestId("CcTab");
     expect(tab).toHaveClass(
-      "cc-text-neutral-300 after:cc-bg-neutral-300 after:cc-h-[2px] after:!cc-w-full"
+      "cc-text-neutral-300 after:!cc-bg-neutral-300 after:cc-h-[2px] after:!cc-w-full"
     );
   });
 
