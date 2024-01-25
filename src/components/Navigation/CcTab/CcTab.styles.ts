@@ -5,7 +5,7 @@ export const CcTabStyles = {
   hover:
     "cc-text-neutral-700 after:cc-bg-primary-400 after:cc-h-[2px] hover:after:!cc-w-full",
   disabled:
-    "cc-text-neutral-300 after:cc-bg-neutral-300 after:cc-h-[2px] after:!cc-w-full",
+    "cc-text-neutral-300 after:!cc-bg-neutral-300 after:cc-h-[2px] after:!cc-w-full",
 };
 
 export const CcNotificationStyles = {
