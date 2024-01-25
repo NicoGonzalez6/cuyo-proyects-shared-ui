@@ -1,5 +1,5 @@
 export const CcTabStyles = {
-  default: `cc-py-4 cc-px-5 cc-h-[51px] cc-min-w-[100px] cc-translate-y-[2px] cc-flex cc-justify-center cc-gap-2 cc-items-center cc-relative after:cc-content-[''] after:cc-transition-all after:cc-absolute after:cc-w-0 after:cc-bottom-0 after:cc-left-0`,
+  default: `cc-py-4 cc-px-5 cc-h-[51px] cc-min-w-[100px] cc-translate-y-[2px] cc-flex cc-justify-center cc-gap-2 cc-items-center cc-relative after:cc-content-[''] after:cc-transition-all after:cc-absolute after:cc-w-0 after:cc-bottom-0 after:cc-left-0 cc-text-neutral-700 after:cc-bg-primary-400 after:cc-h-[2px] hover:after:!cc-w-full`,
   active:
     "cc-text-primary-500 after:cc-bg-primary-400 after:cc-h-[2px] after:!cc-w-full",
   hover:
